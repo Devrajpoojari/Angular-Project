@@ -1,0 +1,11 @@
+
+h2{
+    color: red;
+}
+.containers{
+    height: 30%;
+    width: 100%;
+    padding: 30px;
+    border: 2px solid lightgray;
+    margin: 10px auto;
+}
