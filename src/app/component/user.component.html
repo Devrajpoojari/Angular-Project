@@ -1,9 +1,59 @@
-<div class="container">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat possimus beatae explicabo praesentium? Expedita
-        quis explicabo, molestiae dolor natus corporis consectetur. Aperiam ex adipisci sint consequuntur eum
-        exercitationem
-        assumenda vero!</p>
-    <div class="btn">This is div section</div>
-    <div class="btn">This is div section</div>
-    <div class="btn">This is div section</div>
+<!-- sign in form -->
+
+<div class="container mt-5 w-25 border shadow p-3 mb-5 bg-white rounded" *ngIf="flag">
+
+    <div class="d-flex justify-content-center  mt-3">
+        <h3>Login Here</h3>
+    </div>
+    <hr>
+    <div>
+
+        <div class="form-group">
+            <label for="username">username</label>
+            <input type="text" class="form-control" placeholder="enter username">
+        </div>
+
+
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" class="form-control" placeholder="enter password">
+            <!-- <a > <button class="btn">click here to sing up</button></a> -->
+        </div>
+
+        <div class="d-flex justify-content-around">
+            <button class="btn btn-success">Submit</button>
+            <button class="btn btn-success" (click)="changeFlag()">Sign Up</button>
+        </div>
+    </div>
+</div>
+
+<!-- sing up form -->
+<div class="container mt-5 w-25 border shadow p-3 mb-5 bg-white rounded" *ngIf="!flag">
+
+    <div class="d-flex justify-content-center mt-3">
+        <h3>Sign Up</h3>
+    </div>
+    <hr>
+    <div>
+        <div class="form-group">
+            <label for="username">username</label>
+            <input type="text" class="form-control" placeholder="enter username">
+        </div>
+
+        <div class="form-group">
+            <label for="username">Phone numer</label>
+            <input type="text" class="form-control" placeholder="enter phone number">
+        </div>
+
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" class="form-control" placeholder="enter password">
+
+        </div>
+
+        <div class="d-flex justify-content-around">
+            <button class="btn btn-success">Submit</button>
+            <button class="btn btn-success" (click)="changeFlag1()">Login</button>
+        </div>
+    </div>
 </div>

@@ -1,0 +1,22 @@
+<table class="table w-50 table-striped shadow">
+    <thead>
+      <tr>
+        <th scope="col">Employee Id</th>
+        <th scope="col">Empoyee name</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of listOfEmployees"> 
+            <th scope="row">{{emp.emplyeeId}}</th>
+            <td>{{emp.employee}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.department}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- <div>
+    <button (click)="getListOfEmployees()" class="btn btn-success"> get the data </button>
+  </div> -->

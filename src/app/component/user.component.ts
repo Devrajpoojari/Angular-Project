@@ -13,4 +13,13 @@ export class UserComponent implements OnInit {
     ngOnInit(): void {
 
     }
+    flag=true;
+
+    changeFlag(){
+        this.flag=false;
+    }
+    changeFlag1(){
+        this.flag=true;
+    }
+
 }
